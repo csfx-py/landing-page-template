@@ -1,0 +1,174 @@
+/* html */
+html {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url("assets/images/SVG/main-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-left: 3px solid #007bff;
+  border-right: 0;
+  border-radius: 25px;
+}
+
+/* common */
+.head-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.body-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem !important;
+  font-weight: 500;
+  color: #333;
+}
+
+.center {
+  text-align: center;
+}
+
+.service-icon {
+  max-height: 100px;
+}
+
+.cred::after {
+  content: "Shreyas";
+}
+
+/* custom */
+
+/* design */
+
+/* home */
+#home {
+  min-height: 100vh;
+}
+
+.nav-item .btn-rad {
+  border-radius: 25px !important;
+}
+
+.home-text {
+  line-height: 1.5;
+}
+
+/* services */
+.serv-col {
+  transition: transform 200ms ease-in;
+  border-radius: 5px;
+}
+.serv-col:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0px 11px 12px -8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 11px 12px -8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 11px 12px -8px rgba(0, 0, 0, 0.5);
+}
+
+/* projects */
+.resp {
+  max-width: 100%;
+}
+
+.android-img {
+  max-width: 40%;
+  max-height: 400px;
+  margin: 0 20px;
+}
+
+/* reviews */
+.carousel-item {
+  height: 70vh;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.rev-text {
+  color: #ddd;
+  line-height: 2.5;
+  margin-top: 2rem;
+}
+
+.rev-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* footer */
+.fa-chevron-circle-up {
+  animation: animateUp 1s linear infinite alternate;
+}
+
+@keyframes animateUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.col-auto:hover .fa-envelope {
+  color: #db493c;
+}
+
+.col-auto:hover .fa-instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.col-auto:hover .fa-whatsapp {
+  color: #00e676;
+}
+
+.col-auto:hover .fa-phone-alt {
+  color: #40e04c;
+}
+
+/* media queries */
+@media (max-width: 990px) {
+  body {
+    background: none;
+  }
+  #home {
+    background: linear-gradient(20deg, #6e00ff 0, #2684ff 100%);
+  }
+  #projects {
+    text-align: center;
+  }
+}
