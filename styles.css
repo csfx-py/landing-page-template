@@ -171,4 +171,7 @@ body {
   #projects {
     text-align: center;
   }
+  .rev-text {
+    line-height: 1.5;
+  }
 }
